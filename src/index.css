@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+  --orageColor: #fdd8b6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  overflow: hidden;
+  background-color: var(--orageColor);
+  height: 100vh;
+  width: 100vw;
+}
