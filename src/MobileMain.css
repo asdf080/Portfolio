@@ -8,18 +8,35 @@ nav ul {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   padding: 20px 10px;
+  margin: 0 5px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.navDown {
+  transform: translateY(185px);
 }
 
 nav li {
+  max-width: 115px;
   padding: 20px 30px;
   border-radius: 20px;
   background: white;
+  cursor: pointer;
 }
 
 nav li div {
   min-height: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background: lightgray;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 500px) {
