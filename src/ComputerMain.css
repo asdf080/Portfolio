@@ -1,10 +1,14 @@
+* {
+  --taskOrange: #fff5e7;
+}
+
 nav#comNav {
   position: fixed;
   display: flex;
   height: 55px;
   width: 100vw;
   inset: auto 0 0 0;
-  background: #fff5e7;
+  background: var(--taskOrange);
   align-items: center;
 }
 
@@ -16,5 +20,24 @@ nav#comNav button {
 }
 
 nav#comNav button img {
-  height: 80%;
+  height: 60%;
+}
+
+aside#comNavModal {
+  position: fixed;
+  width: 280px;
+  height: 450px;
+  inset: auto auto 55px 0;
+  background: var(--taskOrange);
+  padding: 20px;
+}
+
+main #comIconWrap {
+  padding: 20px;
+}
+
+main #comIconWrap li {
+  margin-bottom: 20px;
+  max-width: 60px;
+  text-align: center;
 }

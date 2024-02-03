@@ -8,7 +8,7 @@ const List = (props) => {
   return (
     <motion.li whileTap={{ scale: 0.96 }} onClick={() => props.fnc(props.index)} ref={props.listRef}>
       <div>
-        <img src={`img/${props.img}.png`} alt="img" />
+        <img src={`img/${props.img}.svg`} alt="img" />
       </div>
       <p>{props.txt}</p>
     </motion.li>
@@ -37,7 +37,7 @@ export default function MobileMain() {
           {/* 선택된 아이콘 바꾸는 기능 추가할것 */}
           <List img="smile" txt="프로필" index={0} fnc={setSectionId} />
           <List img="folder1" txt="프로젝트" index={1} fnc={setSectionId} />
-          <List img="folder1" txt="사이드" index={2} fnc={setSectionId} />
+          <List img="star" txt="사이드" index={2} fnc={setSectionId} />
           <List img="folder1" txt="아이콘" index={3} fnc={setSectionId} />
         </ul>
       </nav>
