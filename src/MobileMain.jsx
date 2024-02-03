@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MobileMain.css";
 import { motion } from "framer-motion";
-import { Profile, Project, SideProject } from "./components/section/section";
+import { Profile, Project, SideProject } from "./components/mobile/mobile";
 import "./utils/scrollNav";
 
 const List = (props) => {
