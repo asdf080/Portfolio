@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MobileMain.css";
 import { motion } from "framer-motion";
-import { Profile, Project, SideProject } from "./components/mobile/mobile";
+import { Profile, Project, SideProject } from "./components/section/section";
 import "./utils/scrollNav";
 
 const List = (props) => {
@@ -27,12 +27,12 @@ export default function MobileMain() {
   const [sectionId, setSectionId] = useState(0);
 
   return (
-    <div style={{ height: "2000px" }}>
+    <div>
       {sectionId == 0 && <Profile />}
       {sectionId == 1 && <Project />}
       {sectionId == 2 && <SideProject />}
       {sectionId == 3 && <Section3 />}
-      <nav>
+      <nav id="mobileNav">
         <ul>
           {/* 선택된 아이콘 바꾸는 기능 추가할것 */}
           <List img="smile" txt="프로필" index={0} fnc={setSectionId} />

@@ -1,0 +1,20 @@
+nav#comNav {
+  position: fixed;
+  display: flex;
+  height: 55px;
+  width: 100vw;
+  inset: auto 0 0 0;
+  background: #fff5e7;
+  align-items: center;
+}
+
+nav#comNav button {
+  height: 90%;
+  background: none;
+  border: none;
+  padding: 0 10px;
+}
+
+nav#comNav button img {
+  height: 80%;
+}

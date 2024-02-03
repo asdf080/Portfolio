@@ -6,6 +6,12 @@
   --orageColor: #fdd8b6;
 }
 
+body {
+  background-color: var(--orageColor);
+  height: 100vh;
+  width: 100vw;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -15,8 +21,6 @@ ul {
   list-style: none;
 }
 
-body {
-  background-color: var(--orageColor);
-  height: 100vh;
-  width: 100vw;
+button {
+  cursor: pointer;
 }

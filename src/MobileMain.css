@@ -1,4 +1,4 @@
-nav ul {
+nav#mobileNav ul {
   display: flex;
   position: fixed;
   bottom: 30px;
@@ -11,13 +11,15 @@ nav ul {
   margin: 0 5px;
   text-align: center;
   transition: transform 0.2s;
+  max-width: 650px;
+  margin: 0 auto;
 }
 
 .navDown {
   transform: translateY(185px);
 }
 
-nav li {
+nav#mobileNav li {
   max-width: 115px;
   padding: 20px 30px;
   border-radius: 20px;
@@ -25,7 +27,7 @@ nav li {
   cursor: pointer;
 }
 
-nav li div {
+nav#mobileNav li div {
   min-height: 50px;
   display: flex;
   align-items: center;
@@ -36,7 +38,6 @@ section {
   width: 100vw;
   height: 100vh;
   background: lightgray;
-  overflow-y: scroll;
 }
 
 @media screen and (max-width: 500px) {
