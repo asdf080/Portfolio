@@ -1,5 +1,6 @@
 * {
   --taskOrange: #fff5e7;
+  --brownColor: #572926;
 }
 
 nav#comNav {
@@ -17,10 +18,17 @@ nav#comNav button {
   background: none;
   border: none;
   padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 nav#comNav button img {
-  height: 60%;
+  height: 50%;
+}
+
+nav#comNav button p {
+  font-size: 17px;
 }
 
 aside#comNavModal {
@@ -30,6 +38,10 @@ aside#comNavModal {
   inset: auto auto 55px 0;
   background: var(--taskOrange);
   padding: 20px;
+}
+
+main {
+  position: relative;
 }
 
 main #comIconWrap {
@@ -42,4 +54,51 @@ main #comIconWrap li {
   text-align: center;
   cursor: pointer;
   padding: 10px 15px;
+}
+
+main #popUpWrap {
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 365px);
+  border: 3px solid var(--brownColor);
+  border-radius: 10px;
+  min-width: 500px;
+  max-width: 95vw;
+  height: 500px;
+  box-shadow: 5px 5px 0 0 var(--brownColor);
+}
+
+#popUpWrap #topBar {
+  background: #9ed3a7;
+  height: 45px;
+  font-size: 25px;
+  line-height: 160%;
+  display: flex;
+  border-radius: 8px 8px 0 0;
+  color: var(--brownColor);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#popUpWrap #topBar #topBarLeft {
+  width: 60%;
+  border-radius: 8px 0 0 0;
+  padding-left: 12px;
+}
+
+#popUpWrap #topBar #topBarRight {
+  background-color: #92cc9a;
+  width: 40%;
+  border-radius: 0 8px 0 0;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 12px;
+}
+
+main section.comWindow {
+  width: 100%;
+  max-height: 91%;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
 }

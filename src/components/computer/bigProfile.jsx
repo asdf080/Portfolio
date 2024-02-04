@@ -1,5 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
+import PopUpWrap from "./PopUpWrap";
 
-export default function bigProfile() {
-  return <div>bigProfile</div>;
+export default function BigProfile() {
+  return (
+    <PopUpWrap text="profile">
+      <section className="comWindow">BigProfile</section>
+    </PopUpWrap>
+  );
 }
