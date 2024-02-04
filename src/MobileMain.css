@@ -34,10 +34,10 @@ nav#mobileNav li div {
   justify-content: center;
 }
 
-section {
+section.mobSect {
   width: 100vw;
   height: 100vh;
-  background: lightgray;
+  background: #aaa;
 }
 
 @media screen and (max-width: 500px) {

@@ -1,0 +1,34 @@
+.profileWrap {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.profileWrap .profImg {
+  border-radius: 100%;
+  background: #eee;
+  height: 220px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileWrap .profImg img {
+  padding: 20px;
+  width: 100%;
+}
+
+.profileWrap .profTxt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.profileWrap .profTxt .pBold {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
