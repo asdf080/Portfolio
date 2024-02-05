@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "./ComputerMain.css";
 import { motion } from "framer-motion";
 import BigProfile from "./components/computer/bigProfile";

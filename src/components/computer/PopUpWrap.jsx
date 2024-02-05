@@ -9,7 +9,7 @@ export default function PopUpWrap({ children, text, onClose, upZ, top, left, zIn
     <Draggable handle="#topBar" bounds="body" nodeRef={nodeRef}>
       <div ref={nodeRef} id="popUpWrap" style={{ top, left, zIndex }} onClick={upZ}>
         <div id="topBar">
-          <div id="topBarLeft">{text}</div>
+          <h2 id="topBarLeft">{text}</h2>
           <div id="topBarRight">
             <button>
               <TbArrowsMaximize size="90%" color="#572926" />

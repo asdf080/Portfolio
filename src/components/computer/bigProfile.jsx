@@ -1,6 +1,7 @@
 import React from "react";
 import "./BigProfile.css";
-import { FaUserAstronaut, FaBirthdayCake, FaMailBulk, FaMapMarkerAlt } from "react-icons/fa";
+import { FaUserAstronaut, FaBirthdayCake, FaMailBulk, FaMapMarkerAlt, FaGithub, FaLink } from "react-icons/fa";
+import { SiNotion } from "react-icons/si";
 
 export default function BigProfile() {
   return (
@@ -40,10 +41,57 @@ export default function BigProfile() {
           </div>
         </div>
       </div>
-      <div>깃허브</div>
-      <div>노션</div>
-      <div>블로그</div>
-      <div>스킬</div>
+      <div className="btnWrap">
+        <button>
+          <FaGithub />
+          깃허브
+        </button>
+        <button>
+          <SiNotion />
+          노션
+        </button>
+        <button>
+          <FaLink />
+          블로그
+        </button>
+      </div>
+      <div className="skillsWrap">
+        <h3>SKILLS</h3>
+        <div className="skillsIconWrap">
+          <div>
+            <img src="img/icon/html.svg" alt="html" />
+            <p>HTML</p>
+          </div>
+          <div>
+            <img src="img/icon/css.svg" alt="css" />
+            <p>CSS</p>
+          </div>
+          <div>
+            <img src="img/icon/js.svg" alt="js" />
+            <p>JS</p>
+          </div>
+          <div>
+            <img src="img/icon/react.svg" alt="react" />
+            <p>REACT</p>
+          </div>
+          <div>
+            <img src="img/icon/tail.svg" alt="tail wind" />
+            <p>Tailwind</p>
+          </div>
+          <div>
+            <img src="img/icon/figma.svg" alt="figma" />
+            <p>Figma</p>
+          </div>
+          <div>
+            <img src="img/icon/xd.svg" alt="adobe xd" />
+            <p>XD</p>
+          </div>
+          <div>
+            <img src="img/icon/ps.svg" alt="adobe photoshop" />
+            <p>PhotoShop</p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

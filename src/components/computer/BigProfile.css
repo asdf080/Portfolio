@@ -1,12 +1,23 @@
+* {
+  --taskOrange: #fff5e7;
+  --brownColor: #572926;
+  --orageColor: #fdd8b6;
+}
+
+.comWindow * {
+  color: var(--brownColor);
+}
+
 .profileWrap {
   display: flex;
   gap: 50px;
   margin-bottom: 50px;
+  user-select: none;
 }
 
 .profileWrap .profImg {
   border-radius: 100%;
-  background: #eee;
+  background: #f2f2f2;
   height: 220px;
   width: 220px;
   display: flex;
@@ -31,4 +42,57 @@
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 5px;
+}
+
+.comWindow .btnWrap {
+  display: flex;
+  gap: 40px;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.comWindow .btnWrap button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  font-size: 25px;
+  border: 2px solid var(--brownColor);
+  border-radius: 10px;
+  transition: all 0.1s linear;
+  background: none;
+  width: 200px;
+}
+
+.skillsWrap {
+  margin-left: 10px;
+}
+
+.skillsWrap h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.skillsWrap .skillsIconWrap {
+  display: flex;
+  gap: 30px 40px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.skillsWrap .skillsIconWrap div {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillsWrap .skillsIconWrap img {
+  width: 100px;
+  margin-bottom: 5px;
+  height: 113px;
+}
+.skillsWrap .skillsIconWrap p {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
 }
