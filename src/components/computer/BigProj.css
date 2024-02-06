@@ -1,0 +1,78 @@
+.projWrap {
+  margin-bottom: 50px;
+}
+
+.projWrap h3 {
+  font-size: 35px;
+}
+
+.projWrap .projContent {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.projContent .sliWrap {
+  width: 340px;
+  height: 250px;
+}
+
+.projContent .sliWrap .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.projContent .sliWrap .slick-slide {
+  margin: 0 5px;
+}
+
+.projContent .sliWrap img {
+  width: 90%;
+}
+
+.sliWrap .sliBtnWrap {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.sliWrap .sliBtnWrap button {
+  background: none;
+  padding: 5px;
+  border: none;
+}
+
+.projWrap .projContent .projDesc {
+  margin-bottom: 20px;
+}
+
+.projContent .projContentTxt h4 {
+  font-size: 22px;
+}
+
+.projContent .projContentTxt ul {
+  margin: 10px 0 15px 0;
+}
+
+.projContent .projContentTxt li {
+  margin: 0 0 3px 5px;
+}
+
+.projContent .projContentTxt li::before {
+  content: "✔ ";
+}
+
+.projContent .projContentTxt hr {
+  margin: 15px 5px;
+}
+
+.projContent .projContentTxt .porjURLWrap {
+  display: flex;
+  gap: 30px;
+}
+
+.projContent .projContentTxt .porjURLWrap p {
+  text-decoration: underline;
+}

@@ -6,7 +6,7 @@ import { SiNotion } from "react-icons/si";
 export default function BigProfile() {
   return (
     <section className="comWindow">
-      <div className="profileWrap">
+      <article className="profileWrap">
         <div className="profImg">
           <img src="img/rocket.png" alt="rocket" />
         </div>
@@ -40,7 +40,7 @@ export default function BigProfile() {
             <p>kntabz81@gmail.com</p>
           </div>
         </div>
-      </div>
+      </article>
       <div className="btnWrap">
         <button>
           <FaGithub />
