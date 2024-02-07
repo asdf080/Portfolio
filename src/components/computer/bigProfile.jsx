@@ -6,6 +6,10 @@ import { SiNotion } from "react-icons/si";
 export default function BigProfile() {
   return (
     <section className="comWindow">
+      <article className="welcomeWrap">
+        <h1>Welcom to my SPACE!</h1>
+        <div>안녕하세요. 포트폴리오입니다.</div>
+      </article>
       <article className="profileWrap">
         <div className="profImg">
           <img src="img/rocket.png" alt="rocket" />
