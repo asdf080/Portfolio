@@ -32,7 +32,7 @@ export default function ComputerMain() {
       <main>
         <ul id="comIconWrap">
           <IconList
-            img="smile"
+            img={showModal.about === 1 ? "smile2" : "smile"}
             txt="About"
             fnc={() => {
               handleModal("about", 1);
@@ -40,7 +40,7 @@ export default function ComputerMain() {
             }}
           />
           <IconList
-            img="folder1"
+            img={showModal.project === 1 ? "folder2" : "folder1"}
             txt="Project"
             fnc={() => {
               handleModal("project", 1);
@@ -68,6 +68,8 @@ export default function ComputerMain() {
               handleModal("about", 0);
               handleZin("about", 0);
             }}
+            color1="#F0D473"
+            color2="#F0B072"
           >
             <BigProfile />
           </PopUpWrap>
@@ -84,6 +86,8 @@ export default function ComputerMain() {
               handleModal("project", 0);
               handleZin("project", 0);
             }}
+            color1="#D7E9FF"
+            color2="#BBDAF6"
           >
             <BigProj />
           </PopUpWrap>
@@ -100,6 +104,8 @@ export default function ComputerMain() {
               handleModal("toy", 0);
               handleZin("toy", 0);
             }}
+            color1="#FE6C6D"
+            color2="#FF4546"
           >
             <BigToyProj />
           </PopUpWrap>

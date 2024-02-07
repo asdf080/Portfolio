@@ -64,6 +64,10 @@ main #comIconWrap li {
   cursor: pointer;
   padding: 10px 15px;
 }
+main #comIconWrap li img {
+  min-height: 45.92px;
+  max-height: 90px;
+}
 
 main #popUpWrap {
   position: absolute;
@@ -76,7 +80,6 @@ main #popUpWrap {
 }
 
 #popUpWrap #topBar {
-  background: #9ed3a7;
   height: 45px;
   font-size: 25px;
   line-height: 160%;
@@ -96,7 +99,6 @@ main #popUpWrap {
 }
 
 #popUpWrap #topBar #topBarRight {
-  background-color: #92cc9a;
   width: 40%;
   border-radius: 0 8px 0 0;
   clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
@@ -129,11 +131,11 @@ main section.comWindow {
 
 section.comWindow::-webkit-scrollbar {
   width: 10px;
-  background: #e8f1f6;
+  background: #eee;
   border-radius: 0 0 10px 0;
 }
 
 main section.comWindow::-webkit-scrollbar-thumb {
-  background: #b4d1e1;
+  background: #fdd8b6;
   border-radius: 10px;
 }

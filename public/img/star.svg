@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.81 40.81"><defs><style>.cls-1{fill:#efd472;}.cls-2{fill:#efb072;}.cls-3{fill:none;stroke:#572826;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.99px;}</style></defs><title>자산 6</title><g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><polygon class="cls-1" points="21.41 0.99 27.59 13.95 41.81 15.82 31.41 25.7 34.02 39.81 21.41 32.98 8.79 39.81 11.4 25.7 0.99 15.82 15.22 13.95 21.41 0.99"/><path class="cls-2" d="M8.79,39.82l12.62-6.88L34,39.77,31.4,25.67l10.41-9.88L27.59,13.94S12.52,24.45,11.41,25.7Z"/><polygon class="cls-3" points="21.41 0.99 27.59 13.95 41.81 15.82 31.41 25.7 34.02 39.81 21.41 32.98 8.79 39.81 11.4 25.7 0.99 15.82 15.22 13.95 21.41 0.99"/></g></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 42.8 40.8" style="enable-background:new 0 0 42.8 40.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FE6C6D;}
+	.st1{fill:#FF4546;}
+	.st2{fill:none;stroke:#572826;stroke-width:1.99;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<title>자산 6</title>
+<polygon class="st0" points="21.4,1 27.6,13.9 41.8,15.8 31.4,25.7 34,39.8 21.4,33 8.8,39.8 11.4,25.7 1,15.8 15.2,13.9 "/>
+<path class="st1" d="M8.8,39.8l12.6-6.9L34,39.8l-2.6-14.1l10.4-9.9l-14.2-1.9c0,0-15.1,10.5-16.2,11.8L8.8,39.8z"/>
+<polygon class="st2" points="21.4,1 27.6,13.9 41.8,15.8 31.4,25.7 34,39.8 21.4,33 8.8,39.8 11.4,25.7 1,15.8 15.2,13.9 "/>
+</svg>
