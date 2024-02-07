@@ -6,26 +6,26 @@ const css = {
   margin: "10px 10px 5px 0",
 };
 
-export function HTML() {
+export function HtmlIcon() {
   return <span style={{ ...css, background: "#FFE2DD" }}>HTML</span>;
 }
 
-export function CSS() {
+export function CssIcon() {
   return <span style={{ ...css, background: "#E8DEEE" }}>CSS</span>;
 }
 
-export function JS() {
+export function JsIcon() {
   return <span style={{ ...css, background: "#FDECC8" }}>JS</span>;
 }
 
-export function JQuery() {
+export function JQueryIcon() {
   return <span style={{ ...css, background: "#FADEC9" }}>jQuery</span>;
 }
 
-export function Reac() {
+export function ReacIcon() {
   return <span style={{ ...css, background: "#DBEDDB" }}>React</span>;
 }
 
-export function Tailwind() {
+export function TailwindIcon() {
   return <span style={{ ...css, background: "#D3E5EF" }}>Tailwind CSS</span>;
 }

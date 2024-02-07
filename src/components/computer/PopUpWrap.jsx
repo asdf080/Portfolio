@@ -1,7 +1,7 @@
 import React from "react";
 import Draggable from "react-draggable";
 import { IoClose } from "react-icons/io5";
-import { TbArrowsMaximize } from "react-icons/tb";
+import { FaRegStar } from "react-icons/fa";
 
 export default function PopUpWrap({ children, text, onClose, upZ, top, left, zIndex }) {
   const nodeRef = React.useRef(null);
@@ -11,8 +11,8 @@ export default function PopUpWrap({ children, text, onClose, upZ, top, left, zIn
         <div id="topBar">
           <h2 id="topBarLeft">{text}</h2>
           <div id="topBarRight">
-            <button>
-              <TbArrowsMaximize size="90%" color="#572926" />
+            <button style={{ padding: "3px" }}>
+              <FaRegStar size="100%" color="#572926" />
             </button>
             <button onClick={onClose}>
               <IoClose size="100%" color="#572926" />

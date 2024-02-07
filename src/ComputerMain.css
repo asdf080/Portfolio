@@ -107,7 +107,8 @@ main #popUpWrap {
 }
 
 #popUpWrap #topBar #topBarRight button {
-  height: 70%;
+  width: 31px;
+  height: 31px;
   margin-left: 7px;
   border: 2px solid var(--brownColor);
   border-radius: 5px;

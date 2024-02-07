@@ -1,5 +1,6 @@
 .projWrap {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+  user-select: none;
 }
 
 .projWrap h3 {
@@ -15,7 +16,7 @@
 }
 
 .projContent .sliWrap {
-  width: 340px;
+  width: 350px;
   height: 250px;
 }
 
@@ -30,18 +31,21 @@
 
 .projContent .sliWrap img {
   width: 90%;
+  border-radius: 5px;
 }
 
 .sliWrap .sliBtnWrap {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
+  margin-top: 10px;
 }
 
 .sliWrap .sliBtnWrap button {
   background: none;
   padding: 5px;
   border: none;
+  font-size: 20px;
 }
 
 .projWrap .projContent .projDesc {
