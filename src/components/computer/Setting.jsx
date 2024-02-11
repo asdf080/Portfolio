@@ -36,7 +36,7 @@ export default function Setting() {
           <div className="colorChip" style={{ background: "#b5c3c9" }}></div>
           <div className="colorTxt">
             <p>insipid gray</p>
-            <p>#8b9599</p>
+            <p>#8B9599</p>
           </div>
         </div>
         <div className="platte" onClick={() => changeColors("#b4e7b3", "#cbf7ca")}>

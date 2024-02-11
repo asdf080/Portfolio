@@ -141,7 +141,7 @@ export default function ComputerMain() {
           <PopUpWrap
             className="smallModal"
             text="setting"
-            top="130px"
+            top="180px"
             left="calc(50% - 350px)"
             zIndex={upZin.setting}
             upZ={() => handleZin("setting", Math.max(...Object.values(upZin)) + 5)}
@@ -158,8 +158,8 @@ export default function ComputerMain() {
         )}
         {showModal.calcul === 1 && (
           <Calculator
-            top="20px"
-            left="20px"
+            top="50px"
+            left="150px"
             zIndex={upZin.calcul}
             upZ={() => handleZin("calcul", Math.max(...Object.values(upZin)) + 5)}
             onClose={(e) => {
@@ -172,7 +172,7 @@ export default function ComputerMain() {
       </main>
       {showAside && (
         <motion.aside ref={asideRef} id="comNavModal" initial={{ height: 200 + "px", opacity: 0 }} animate={{ height: 450 + "px", opacity: 1 }} transition={{ duration: 0.4 }}>
-          <motion.ul initial={{ translateY: 40 }} animate={{ translateY: 0 }} transition={{ duration: 0.3 }}>
+          <motion.ul initial={{ translateY: 40 }} animate={{ translateY: 0 }} transition={{ duration: 0.3 }} onClick={() => setShowAside(!showAside)}>
             <a href="https://asdf080.github.io/TETRIS/" target="_blank">
               <li>
                 <img src="img/cubeIcon.png" alt="TETRIS" /> <p>TETRIS</p>
