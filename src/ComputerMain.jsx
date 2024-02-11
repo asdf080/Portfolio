@@ -149,8 +149,8 @@ export default function ComputerMain() {
               handleModal("setting", 0);
               handleZin("setting", 0);
             }}
-            color1="#D7E9FF"
-            color2="#BBDAF6"
+            color1="#e3f0ff"
+            color2="#D7E9FF"
           >
             <Setting />
           </PopUpWrap>
@@ -182,32 +182,30 @@ export default function ComputerMain() {
           <img src="img/window.png" alt="window" />
           <p>시작</p>
         </button>
-        <span>
-          {showModal.about === 1 && (
-            <button className="modalThum" onClick={() => handleZin("about", Math.max(...Object.values(upZin)) + 5)}>
-              <BiSolidWindowAlt fill="#572926" />
-              about
-            </button>
-          )}
-          {showModal.project === 1 && (
-            <button className="modalThum" onClick={() => handleZin("project", Math.max(...Object.values(upZin)) + 5)}>
-              <BiSolidWindowAlt fill="#572926" />
-              project
-            </button>
-          )}
-          {showModal.toy === 1 && (
-            <button className="modalThum" onClick={() => handleZin("toy", Math.max(...Object.values(upZin)) + 5)}>
-              <BiSolidWindowAlt fill="#572926" />
-              toy project
-            </button>
-          )}
-          {showModal.setting === 1 && (
-            <button className="modalThum" onClick={() => handleZin("setting", Math.max(...Object.values(upZin)) + 5)}>
-              <BiSolidWindowAlt fill="#572926" />
-              setting
-            </button>
-          )}
-        </span>
+        {showModal.about === 1 && (
+          <button className="modalThum" onClick={() => handleZin("about", Math.max(...Object.values(upZin)) + 5)}>
+            <BiSolidWindowAlt fill="#572926" />
+            about
+          </button>
+        )}
+        {showModal.project === 1 && (
+          <button className="modalThum" onClick={() => handleZin("project", Math.max(...Object.values(upZin)) + 5)}>
+            <BiSolidWindowAlt fill="#572926" />
+            project
+          </button>
+        )}
+        {showModal.toy === 1 && (
+          <button className="modalThum" onClick={() => handleZin("toy", Math.max(...Object.values(upZin)) + 5)}>
+            <BiSolidWindowAlt fill="#572926" />
+            toy project
+          </button>
+        )}
+        {showModal.setting === 1 && (
+          <button className="modalThum" onClick={() => handleZin("setting", Math.max(...Object.values(upZin)) + 5)}>
+            <BiSolidWindowAlt fill="#572926" />
+            setting
+          </button>
+        )}
       </nav>
     </>
   );

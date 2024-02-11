@@ -1,16 +1,16 @@
 import React from "react";
-import "./BigProfile.css";
+import "./style/BigProfile.css";
 import { FaUserAstronaut, FaBirthdayCake, FaMailBulk, FaMapMarkerAlt, FaGithub, FaLink } from "react-icons/fa";
 import { SiNotion } from "react-icons/si";
 
 export default function BigProfile() {
   return (
     <section className="comWindow">
-      <article className="welcomeWrap">
+      {/* <article className="welcomeWrap">
         <h1>Welcom to my SPACE!</h1>
         <div>안녕하세요. 포트폴리오입니다.</div>
-        <div>아이콘을 눌러 메뉴를 확인해보세요!</div>
-      </article>
+        <p>아이콘을 눌러 메뉴를 확인해보세요.</p>
+      </article> */}
       <article className="profileWrap">
         <div className="profImg">
           <img src="img/rocket.png" alt="rocket" />
@@ -21,7 +21,7 @@ export default function BigProfile() {
               <FaUserAstronaut />
               &nbsp; name
             </p>
-            <p>이름</p>
+            <p>Lee da hee</p>
           </div>
           <div>
             <p className="pBold">

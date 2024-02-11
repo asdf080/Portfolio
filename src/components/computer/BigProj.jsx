@@ -1,6 +1,6 @@
 import React from "react";
 import ProjArt from "./ProjArt";
-import "./BigProj.css";
+import "./style/BigProj.css";
 import { HtmlIcon, CssIcon, JsIcon, JQueryIcon, ReacIcon, TailwindIcon } from "../Icon";
 
 export default function BigProj() {
