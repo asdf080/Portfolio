@@ -1,0 +1,136 @@
+#calSect {
+  position: absolute;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 350px;
+  height: 525px;
+  border: 3px solid var(--brownColor);
+}
+
+#calSect > div {
+  display: flex;
+  justify-content: end;
+  padding: 10px 15px 0;
+}
+
+#calSect #calClose {
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: var(--brownColor);
+}
+
+#calWrap {
+  background: white;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#calculator input#numInput {
+  padding: 5px;
+  font-size: 28px;
+  text-align: right;
+  border: none;
+  margin-bottom: 15px;
+  outline: none;
+  width: 95%;
+}
+
+#calculator #calBtnWrap #circleWrap {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  margin: 50px 20px 50px 10px;
+  border-radius: 50%;
+}
+
+#calBtnWrap {
+  position: relative;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calBtnWrap input {
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  outline: none;
+}
+
+#calBtnWrap #circleTopBtn {
+  display: flex;
+  margin: 0 auto 5px 10px;
+}
+
+#calBtnWrap #circleTopBtn input {
+  background: #f3adc3;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px 5px 0;
+}
+
+#calBtnWrap .circleBtn {
+  font-size: 20px;
+  color: white;
+  border: none;
+}
+
+#calBtnWrap #circleWrap .circleBtn {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #a0a3e9;
+}
+
+#calBtnWrap #plusWrap {
+  position: absolute;
+  top: 40%;
+  left: 25.5%;
+  display: flex;
+  flex-wrap: wrap;
+  --size: 150px;
+  width: var(--size);
+  height: var(--size);
+  gap: 5px;
+}
+
+#calBtnWrap #plusWrap .circleBtn {
+  width: 48%;
+  height: 48%;
+  font-size: 40px;
+  display: flex;
+  padding: 5px;
+}
+
+#calBtnWrap #plusWrap .circleBtn:nth-child(1) {
+  border-radius: 100% 5px 5px;
+  background: #97d0f8;
+  justify-content: end;
+  align-items: end;
+}
+#calBtnWrap #plusWrap .circleBtn:nth-child(2) {
+  border-radius: 5px 100% 5px 5px;
+  background: #ecd17f;
+  align-items: end;
+}
+#calBtnWrap #plusWrap .circleBtn:nth-child(3) {
+  border-radius: 5px 5px 5px 100%;
+  background: #f1b571;
+  justify-content: end;
+}
+#calBtnWrap #plusWrap .circleBtn:nth-child(4) {
+  border-radius: 5px 5px 100% 5px;
+  background: #a7db93;
+}

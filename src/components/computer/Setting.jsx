@@ -6,7 +6,6 @@ export default function Setting() {
     mainColor: "#fdd8b6",
     mainColor2: "#fff5e7",
   });
-
   const changeColors = (color1, color2) => {
     setColors(() => {
       document.documentElement.style.setProperty("--mainColor", color1);

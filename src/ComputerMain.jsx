@@ -7,6 +7,7 @@ import PopUpWrap from "./components/computer/PopUpWrap";
 import BigToyProj from "./components/computer/BigToyProj";
 import { BiSolidWindowAlt } from "react-icons/bi";
 import Setting from "./components/computer/Setting";
+import Calculator from "./components/computer/Calculator";
 
 const IconList = (props) => {
   return (
@@ -20,8 +21,8 @@ const IconList = (props) => {
 export default function ComputerMain() {
   const [showAside, setShowAside] = useState(false);
   const asideRef = useRef();
-  const [showModal, setShowModal] = useState({ about: 1, project: 0, toy: 0, setting: 0 });
-  const [upZin, setUpZin] = useState({ about: 0, project: 0, toy: 0, setting: 0 });
+  const [showModal, setShowModal] = useState({ about: 1, project: 0, toy: 0, setting: 0, calcul: 0 });
+  const [upZin, setUpZin] = useState({ about: 0, project: 0, toy: 0, setting: 0, calcul: 0 });
 
   const handleModal = (modal, value) => {
     setShowModal((prev) => ({ ...prev, [modal]: value }));
@@ -155,6 +156,19 @@ export default function ComputerMain() {
             <Setting />
           </PopUpWrap>
         )}
+        {showModal.calcul === 1 && (
+          <Calculator
+            top="20px"
+            left="20px"
+            zIndex={upZin.calcul}
+            upZ={() => handleZin("calcul", Math.max(...Object.values(upZin)) + 5)}
+            onClose={(e) => {
+              e.stopPropagation();
+              handleModal("calcul", 0);
+              handleZin("calcul", 0);
+            }}
+          />
+        )}
       </main>
       {showAside && (
         <motion.aside ref={asideRef} id="comNavModal" initial={{ height: 200 + "px", opacity: 0 }} animate={{ height: 450 + "px", opacity: 1 }} transition={{ duration: 0.4 }}>
@@ -174,9 +188,18 @@ export default function ComputerMain() {
                 <img src="img/lapIcon.png" alt="Card Game" /> <p>Search Laptop</p>
               </li>
             </a>
+            <li
+              onClick={() => {
+                handleModal("calcul", 1);
+                handleZin("calcul", Math.max(...Object.values(upZin)) + 5);
+              }}
+            >
+              <img src="img/caculIcon.png" alt="Calculator" /> <p>Calculator</p>
+            </li>
           </motion.ul>
         </motion.aside>
       )}
+
       <nav id="comNav">
         <button className={`startBtn ${showAside ? "clicked" : ""}`} onClick={() => setShowAside(!showAside)}>
           <img src="img/window.png" alt="window" />
