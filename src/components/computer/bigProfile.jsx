@@ -9,6 +9,7 @@ export default function BigProfile() {
       <article className="welcomeWrap">
         <h1>Welcom to my SPACE!</h1>
         <div>안녕하세요. 포트폴리오입니다.</div>
+        <div>아이콘을 눌러 메뉴를 확인해보세요!</div>
       </article>
       <article className="profileWrap">
         <div className="profImg">

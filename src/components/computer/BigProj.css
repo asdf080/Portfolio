@@ -1,5 +1,5 @@
 .projWrap {
-  margin-bottom: 70px;
+  margin-bottom: 100px;
   user-select: none;
 }
 
@@ -14,10 +14,23 @@
   margin-top: 20px;
   font-size: 20px;
 }
+.projWrap .projContent.toyContent {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+}
 
 .projContent .sliWrap {
   width: 350px;
   height: 250px;
+}
+
+.projContent > img {
+  width: 350px;
+  height: auto;
 }
 
 .projContent .sliWrap .slick-track {
@@ -48,7 +61,7 @@
 }
 
 .projWrap .projContent .projDesc {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .projContent .projContentTxt h4 {

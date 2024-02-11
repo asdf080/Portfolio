@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ComputerMain.css";
 import { motion } from "framer-motion";
-import BigProfile from "./components/computer/bigProfile";
+import BigProfile from "./components/computer/BigProfile";
 import BigProj from "./components/computer/BigProj";
 import PopUpWrap from "./components/computer/PopUpWrap";
 import BigToyProj from "./components/computer/BigToyProj";
@@ -48,8 +48,8 @@ export default function ComputerMain() {
             }}
           />
           <IconList
-            img="star"
-            txt="Toy"
+            img={showModal.toy === 1 ? "folder2" : "folder1"}
+            txt="Toy Project"
             fnc={() => {
               handleModal("toy", 1);
               handleZin("toy", Math.max(...Object.values(upZin)) + 5);
@@ -104,8 +104,8 @@ export default function ComputerMain() {
               handleModal("toy", 0);
               handleZin("toy", 0);
             }}
-            color1="#FE6C6D"
-            color2="#FF4546"
+            color1="#D7E9FF"
+            color2="#BBDAF6"
           >
             <BigToyProj />
           </PopUpWrap>
