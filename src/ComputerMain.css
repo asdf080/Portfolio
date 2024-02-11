@@ -14,29 +14,51 @@ nav#comNav {
   align-items: center;
 }
 
-nav#comNav button {
-  height: 90%;
+nav#comNav button.startBtn {
+  height: 80%;
   background: none;
   border: none;
   padding: 0 10px;
   display: flex;
   align-items: center;
   gap: 10px;
+  margin: 0 20px 0 3px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid var(--orageColor);
+  border-bottom: 3px solid var(--orageColor);
 }
 
-nav#comNav button:active {
+nav#comNav button.clicked {
   border-top: 3px solid var(--orageColor);
   border-left: 3px solid var(--orageColor);
   border-right: 3px solid white;
   border-bottom: 3px solid white;
 }
 
-nav#comNav button img {
-  height: 50%;
+nav#comNav button.startBtn img {
+  height: 24px;
 }
 
-nav#comNav button p {
+nav#comNav button.startBtn p {
   font-size: 17px;
+}
+
+nav#comNav .modalThum {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 80%;
+  width: 200px;
+  border-top: 3px solid var(--orageColor);
+  border-left: 3px solid var(--orageColor);
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  background: none;
+  margin: 0 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 aside#comNavModal {
@@ -46,6 +68,23 @@ aside#comNavModal {
   inset: auto auto 55px 0;
   background: var(--taskOrange);
   padding: 20px;
+  z-index: 100;
+  border-top: 3px solid #ffc692;
+  border-right: 3px solid #ffc692;
+}
+
+aside#comNavModal li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  /* border-bottom: 2px solid var(--orageColor); */
+}
+
+aside#comNavModal li img {
+  width: 40px;
 }
 
 main {
@@ -77,6 +116,12 @@ main #popUpWrap {
   max-width: 80vw;
   height: 100%;
   box-shadow: 5px 5px 0 0 var(--brownColor);
+  background: white;
+}
+
+main #popUpWrap.smallModal {
+  width: 400px;
+  height: 400px;
 }
 
 #popUpWrap #topBar {
