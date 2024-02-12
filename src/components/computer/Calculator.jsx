@@ -71,7 +71,7 @@ export default function Calculator({ top, left, zIndex, onClose, upZ }) {
                 <div id="circleTopBtn">
                   <input type="button" value="AC" onClick={() => setValue("")} />
                   <input type="button" value="DEL" onClick={() => setValue(value.slice(0, -1))} />
-                  <input type="button" value="=" onClick={숫자계산} style={{ fontSize: "28px", lineHeight: "26px" }} />
+                  <input type="button" value="=" onClick={숫자계산} style={{ fontSize: "28px", lineHeight: "26px", width: "100px" }} />
                 </div>
                 <div ref={containerRef} id="circleWrap">
                   <InputBtn val="2" onClick={() => handleInput("2".toString())} />

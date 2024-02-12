@@ -47,18 +47,24 @@ export default function BigProfile() {
         </div>
       </article>
       <div className="btnWrap">
-        <button>
-          <FaGithub />
-          깃허브
-        </button>
-        <button>
-          <SiNotion />
-          노션
-        </button>
-        <button>
-          <FaLink />
-          블로그
-        </button>
+        <a href="https://github.com/asdf080" target="_blank">
+          <button>
+            <FaGithub />
+            깃허브
+          </button>
+        </a>
+        <a href="https://pinnate-flare-336.notion.site/4a5026c10b1646a989c0ff12e56d1f1e" target="_blank">
+          <button>
+            <SiNotion />
+            노션
+          </button>
+        </a>
+        <a href="https://08-log.tistory.com/3" target="_blank">
+          <button>
+            <FaLink />
+            블로그
+          </button>
+        </a>
       </div>
       <div className="skillsWrap">
         <h3>SKILLS</h3>

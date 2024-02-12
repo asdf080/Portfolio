@@ -8,7 +8,7 @@ const List = (props) => {
   return (
     <motion.li whileTap={{ scale: 0.96 }} onClick={() => props.fnc(props.index)} ref={props.listRef}>
       <div>
-        <img src={`img/${props.img}.svg`} alt="img" />
+        <img src={`img/${props.img}.svg`} alt={props.txt} />
       </div>
       <p>{props.txt}</p>
     </motion.li>

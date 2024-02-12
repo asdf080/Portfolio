@@ -1,9 +1,11 @@
-const ul = document.querySelector("nav ul");
 let prevScrollY = window.scrollY;
 
 window.addEventListener("scroll", () => {
-  try {
+  const ul = document.querySelector("nav ul");
+
+  if (ul) {
     const currScrollY = window.scrollY;
+
     if (currScrollY > prevScrollY) {
       // 스크롤 내릴 때
       ul.classList.add("navDown");
@@ -12,6 +14,6 @@ window.addEventListener("scroll", () => {
       ul.classList.remove("navDown");
     }
 
-    prevScrollY = currScrollY;
-  } catch (error) {}
+    prevScrollY = currScrollY; // 이전 스크롤 위치 업데이트
+  }
 });

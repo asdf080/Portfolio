@@ -103,7 +103,7 @@ export default function ComputerMain() {
         {showModal.project === 1 && (
           <PopUpWrap
             text="Project"
-            top="14%"
+            top="13%"
             left="calc(50% - 450px)"
             zIndex={upZin.project}
             upZ={() => handleZin("project", Math.max(...Object.values(upZin)) + 5)}
@@ -121,7 +121,7 @@ export default function ComputerMain() {
         {showModal.toy === 1 && (
           <PopUpWrap
             text="Toy Project"
-            top="23%"
+            top="21%"
             left="calc(50% - 400px)"
             zIndex={upZin.toy}
             upZ={() => handleZin("toy", Math.max(...Object.values(upZin)) + 5)}

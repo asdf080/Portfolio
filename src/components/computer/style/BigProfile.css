@@ -111,3 +111,26 @@
   font-size: 22px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 1024px) {
+  .profileWrap {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  /* .profileWrap .profImg {
+    height: 180px;
+    width: 180px;
+  } */
+  .profileWrap .profTxt {
+    gap: 30px 10px;
+  }
+
+  .skillsWrap {
+    padding-bottom: 100px;
+  }
+
+  .skillsWrap .skillsIconWrap {
+    justify-content: center;
+  }
+}
