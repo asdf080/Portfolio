@@ -85,7 +85,7 @@ export default function ComputerMain() {
         {showModal.about === 1 && (
           <PopUpWrap
             text="profile"
-            top="30px"
+            top="5%"
             left="calc(50% - 500px)"
             zIndex={upZin.about}
             upZ={() => handleZin("about", Math.max(...Object.values(upZin)) + 5)}
@@ -103,7 +103,7 @@ export default function ComputerMain() {
         {showModal.project === 1 && (
           <PopUpWrap
             text="Project"
-            top="80px"
+            top="14%"
             left="calc(50% - 450px)"
             zIndex={upZin.project}
             upZ={() => handleZin("project", Math.max(...Object.values(upZin)) + 5)}
@@ -121,7 +121,7 @@ export default function ComputerMain() {
         {showModal.toy === 1 && (
           <PopUpWrap
             text="Toy Project"
-            top="130px"
+            top="23%"
             left="calc(50% - 400px)"
             zIndex={upZin.toy}
             upZ={() => handleZin("toy", Math.max(...Object.values(upZin)) + 5)}
@@ -140,8 +140,8 @@ export default function ComputerMain() {
           <PopUpWrap
             className="smallModal"
             text="setting"
-            top="180px"
-            left="calc(50% - 350px)"
+            top="8%"
+            left="50%"
             zIndex={upZin.setting}
             upZ={() => handleZin("setting", Math.max(...Object.values(upZin)) + 5)}
             onClose={(e) => {

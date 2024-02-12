@@ -27,7 +27,7 @@ export default function MobileMain() {
   const [sectionId, setSectionId] = useState(0);
 
   return (
-    <div>
+    <>
       {sectionId == 0 && <Profile />}
       {sectionId == 1 && <Project />}
       {sectionId == 2 && <SideProject />}
@@ -41,6 +41,6 @@ export default function MobileMain() {
           <List img="folder1" txt="아이콘" index={3} fnc={setSectionId} />
         </ul>
       </nav>
-    </div>
+    </>
   );
 }

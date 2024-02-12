@@ -27,6 +27,8 @@ nav#comNav button.startBtn {
   border-left: 3px solid white;
   border-right: 3px solid var(--mainColor);
   border-bottom: 3px solid var(--mainColor);
+  color: var(--brownColor);
+  font-weight: 600;
 }
 
 nav#comNav button.clicked {
@@ -59,6 +61,7 @@ nav#comNav .modalThum {
   padding: 5px 10px;
   font-size: 20px;
   text-transform: uppercase;
+  color: var(--brownColor);
 }
 
 nav#comNav .modalThum img {
@@ -86,6 +89,7 @@ aside#comNavModal li {
   padding-bottom: 10px;
   margin-bottom: 15px;
   font-size: 20px;
+  color: var(--brownColor);
   /* border-bottom: 2px solid var(--mainColor); */
 }
 
@@ -179,7 +183,7 @@ main #popUpWrap.smallModal {
 
 main section.comWindow {
   width: 100%;
-  max-height: 93.5%;
+  max-height: 92%;
   border-radius: 0 0 10px 10px;
   padding: 30px;
   overflow-y: scroll;
