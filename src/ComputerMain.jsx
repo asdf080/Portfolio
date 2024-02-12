@@ -5,7 +5,6 @@ import BigProfile from "./components/computer/BigProfile";
 import BigProj from "./components/computer/BigProj";
 import PopUpWrap from "./components/computer/PopUpWrap";
 import BigToyProj from "./components/computer/BigToyProj";
-import { BiSolidWindowAlt } from "react-icons/bi";
 import Setting from "./components/computer/Setting";
 import Calculator from "./components/computer/Calculator";
 
@@ -207,25 +206,25 @@ export default function ComputerMain() {
         </button>
         {showModal.about === 1 && (
           <button className="modalThum" onClick={() => handleZin("about", Math.max(...Object.values(upZin)) + 5)}>
-            <BiSolidWindowAlt fill="#572926" />
+            <img src="img/smile.svg" alt="about" />
             about
           </button>
         )}
         {showModal.project === 1 && (
           <button className="modalThum" onClick={() => handleZin("project", Math.max(...Object.values(upZin)) + 5)}>
-            <BiSolidWindowAlt fill="#572926" />
+            <img src="img/folder1.svg" alt="project" />
             project
           </button>
         )}
         {showModal.toy === 1 && (
           <button className="modalThum" onClick={() => handleZin("toy", Math.max(...Object.values(upZin)) + 5)}>
-            <BiSolidWindowAlt fill="#572926" />
+            <img src="img/folder1.svg" alt="toy project" />
             toy project
           </button>
         )}
         {showModal.setting === 1 && (
           <button className="modalThum" onClick={() => handleZin("setting", Math.max(...Object.values(upZin)) + 5)}>
-            <BiSolidWindowAlt fill="#572926" />
+            <img src="img/paper.svg" alt="setting" />
             setting
           </button>
         )}

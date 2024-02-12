@@ -47,7 +47,7 @@ nav#comNav button.startBtn p {
 nav#comNav .modalThum {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   height: 80%;
   width: 200px;
   border-top: 3px solid var(--mainColor);
@@ -59,6 +59,11 @@ nav#comNav .modalThum {
   padding: 5px 10px;
   font-size: 20px;
   text-transform: uppercase;
+}
+
+nav#comNav .modalThum img {
+  width: 20px;
+  height: 20px;
 }
 
 aside#comNavModal {
