@@ -26,6 +26,9 @@ nav#mobileNav li {
   border-radius: 20px;
   background: white;
   cursor: pointer;
+  width: 20%;
+  color: var(--brownColor);
+  font-weight: 600;
 }
 
 nav#mobileNav li div {
@@ -41,14 +44,50 @@ section.mobSect {
   background: white;
 }
 
+.mobPalette {
+  background: rgb(221, 221, 221);
+  border: 15px solid rgb(221, 221, 221);
+  border-radius: 12px;
+  margin: 15px 0 30px;
+}
+
+.mobPalette .mobColorChip {
+  height: 150px;
+  background: #f9fcfd;
+  border-radius: 7px 7px 0 0;
+}
+
+.mobPalette .mobColorTxt {
+  padding: 10px 10px 2px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--brownColor);
+}
+
+.mobPalette .mobColorTxt p:first-child {
+  text-transform: uppercase;
+}
+.mobPalette .mobColorTxt p:last-child {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 1024px) {
+  body,
+  section.mobSect,
+  .comWindow {
+    background: #f9fcfd;
+  }
+}
+
 @media screen and (max-width: 500px) {
-  nav ul {
+  nav#mobileNav ul {
     justify-content: space-between;
   }
-  nav li {
-    padding: 10px 15px;
+  nav#mobileNav li {
+    min-width: 94px;
+    padding: 10px;
   }
-  nav img {
+  nav#mobileNav img {
     width: 40px;
     margin: 0 auto;
   }

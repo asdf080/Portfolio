@@ -92,3 +92,23 @@
 .projContent .projContentTxt .porjURLWrap p {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1024px) {
+  .projWrap {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
+  .projWrap:last-child {
+    padding-bottom: 100px;
+  }
+
+  .projWrap .projContent {
+    flex-direction: column;
+  }
+  .projContent .sliWrap {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
