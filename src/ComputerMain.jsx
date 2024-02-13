@@ -30,6 +30,8 @@ export default function ComputerMain() {
     setUpZin((prev) => ({ ...prev, [modal]: value }));
   };
 
+  const 가장높은Z = Object.keys(upZin).reduce((a, b) => (upZin[a] > upZin[b] ? a : b));
+
   const 바깥쪽클릭 = (event) => {
     if (asideRef.current && !asideRef.current.contains(event.target)) {
       setShowAside(false); // aside 바깥쪽을 클릭하면 닫힘
@@ -74,7 +76,7 @@ export default function ComputerMain() {
             }}
           />
           <IconList
-            img="paper"
+            img="palette"
             txt="Setting"
             fnc={() => {
               handleModal("setting", 1);
@@ -149,8 +151,8 @@ export default function ComputerMain() {
               handleModal("setting", 0);
               handleZin("setting", 0);
             }}
-            color1="#e3f0ff"
-            color2="#D7E9FF"
+            color1="#B4E7B3"
+            color2="#a8dfb1"
           >
             <Setting />
           </PopUpWrap>
@@ -205,26 +207,26 @@ export default function ComputerMain() {
           <p>시작</p>
         </button>
         {showModal.about === 1 && (
-          <button className="modalThum" onClick={() => handleZin("about", Math.max(...Object.values(upZin)) + 5)}>
+          <button className={`modalThum ${가장높은Z === "about" ? "upZ" : ""}`} onClick={() => handleZin("about", Math.max(...Object.values(upZin)) + 5)}>
             <img src="img/smile.svg" alt="about" />
             about
           </button>
         )}
         {showModal.project === 1 && (
-          <button className="modalThum" onClick={() => handleZin("project", Math.max(...Object.values(upZin)) + 5)}>
+          <button className={`modalThum ${가장높은Z === "project" ? "upZ" : ""}`} onClick={() => handleZin("project", Math.max(...Object.values(upZin)) + 5)}>
             <img src="img/folder1.svg" alt="project" />
             project
           </button>
         )}
         {showModal.toy === 1 && (
-          <button className="modalThum" onClick={() => handleZin("toy", Math.max(...Object.values(upZin)) + 5)}>
+          <button className={`modalThum ${가장높은Z === "toy" ? "upZ" : ""}`} onClick={() => handleZin("toy", Math.max(...Object.values(upZin)) + 5)}>
             <img src="img/folder1.svg" alt="toy project" />
             toy project
           </button>
         )}
         {showModal.setting === 1 && (
-          <button className="modalThum" onClick={() => handleZin("setting", Math.max(...Object.values(upZin)) + 5)}>
-            <img src="img/paper.svg" alt="setting" />
+          <button className={`modalThum ${가장높은Z === "setting" ? "upZ" : ""}`} onClick={() => handleZin("setting", Math.max(...Object.values(upZin)) + 5)}>
+            <img src="img/palette.svg" alt="setting" />
             setting
           </button>
         )}

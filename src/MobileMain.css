@@ -1,3 +1,7 @@
+:root {
+  --mobCustomColor: #fff;
+}
+
 nav#mobileNav ul {
   display: flex;
   position: fixed;
@@ -45,15 +49,16 @@ section.mobSect {
 }
 
 .mobPalette {
-  background: rgb(221, 221, 221);
-  border: 15px solid rgb(221, 221, 221);
+  background: rgb(228, 228, 228);
+  border: 15px solid rgb(228, 228, 228);
   border-radius: 12px;
-  margin: 15px 0 30px;
+  margin: 15px auto 30px;
+  cursor: pointer;
+  max-width: 700px;
 }
 
 .mobPalette .mobColorChip {
   height: 150px;
-  background: #f9fcfd;
   border-radius: 7px 7px 0 0;
 }
 
@@ -75,7 +80,7 @@ section.mobSect {
   body,
   section.mobSect,
   .comWindow {
-    background: #f9fcfd;
+    background: var(--mobCustomColor);
   }
 }
 

@@ -31,7 +31,7 @@ export default function MobileMain() {
           <List img={sectionId === 0 ? "smile2" : "smile"} txt="프로필" index={0} fnc={setSectionId} />
           <List img={sectionId === 1 ? "folder2" : "folder1"} txt="프로젝트" index={1} fnc={setSectionId} />
           <List img={sectionId === 2 ? "folder2" : "folder1"} txt="사이드" index={2} fnc={setSectionId} />
-          <List img="heart" txt="설정" index={3} fnc={setSectionId} />
+          <List img="palette" txt="설정" index={3} fnc={setSectionId} />
         </ul>
       </nav>
     </>

@@ -111,4 +111,8 @@
     height: auto;
     margin: 0 auto;
   }
+
+  .projContent.toyContent > img {
+    width: 80%;
+  }
 }

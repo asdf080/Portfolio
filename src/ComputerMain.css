@@ -64,6 +64,13 @@ nav#comNav .modalThum {
   color: var(--brownColor);
 }
 
+nav#comNav .modalThum.upZ {
+  border-right: 3px solid var(--mainColor);
+  border-bottom: 3px solid var(--mainColor);
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+
 nav#comNav .modalThum img {
   width: 20px;
   height: 20px;
