@@ -14,6 +14,10 @@ nav#comNav {
   align-items: center;
 }
 
+nav#comNav > div {
+  display: flex;
+}
+
 nav#comNav button.startBtn {
   height: 80%;
   background: none;
@@ -62,6 +66,7 @@ nav#comNav .modalThum {
   font-size: 20px;
   text-transform: uppercase;
   color: var(--brownColor);
+  background: var(--mainColor2);
 }
 
 nav#comNav .modalThum.upZ {
