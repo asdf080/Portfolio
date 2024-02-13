@@ -93,11 +93,15 @@ aside#comNavModal {
   border-right: 3px solid white;
 }
 
-aside#comNavModal li {
-  cursor: pointer;
+aside#comNavModal li,
+aside#comNavModal li a {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+aside#comNavModal li {
+  cursor: pointer;
   padding-bottom: 10px;
   margin-bottom: 15px;
   font-size: 20px;

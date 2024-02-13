@@ -40,13 +40,26 @@ export default function ComputerMain() {
   };
 
   useEffect(() => {
-    // 컴포넌트가 마운트되면 document에 클릭 이벤트 리스너 추가
+    // aside 바깥클릭시 닫히는 기능
     document.addEventListener("click", 바깥쪽클릭, true);
     return () => {
-      // 컴포넌트가 언마운트되면 이벤트 리스너 제거
       document.removeEventListener("click", 바깥쪽클릭, true);
     };
-  }, []); // 빈 배열을 전달하여 컴포넌트 마운트 시 한 번만 실행되게 함
+  }, []);
+
+  const list = {
+    start: { opacity: 0 },
+    end: { opacity: 1 },
+  };
+
+  const asideItem = {
+    start: { opacity: 0, y: 30 },
+    end: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 300, damping: 24 },
+    },
+  };
 
   return (
     <>
@@ -174,30 +187,31 @@ export default function ComputerMain() {
       </main>
       {showAside && (
         <motion.aside ref={asideRef} id="comNavModal" initial={{ height: 200 + "px", opacity: 0 }} animate={{ height: 450 + "px", opacity: 1 }} transition={{ duration: 0.4 }}>
-          <motion.ul initial={{ translateY: 40 }} animate={{ translateY: 0 }} transition={{ duration: 0.3 }} onClick={() => setShowAside(!showAside)}>
-            <a href="https://asdf080.github.io/TETRIS/" target="_blank">
-              <li>
+          <motion.ul initial="start" animate="end" transition={{ delayChildren: 0.1, staggerChildren: 0.1 }} onClick={() => setShowAside(!showAside)}>
+            <motion.li variants={asideItem}>
+              <a href="https://asdf080.github.io/TETRIS/" target="_blank">
                 <img src="img/cubeIcon.png" alt="TETRIS" /> <p>TETRIS</p>
-              </li>
-            </a>
-            <a href="https://asdf080.github.io/Memory-Cards/" target="_blank">
-              <li>
+              </a>
+            </motion.li>
+            <motion.li variants={asideItem}>
+              <a href="https://asdf080.github.io/Memory-Cards/" target="_blank">
                 <img src="img/gemIcon.png" alt="Card Game" /> <p>Card Game</p>
-              </li>
-            </a>
-            <a href="https://asdf080.github.io/Laptop-intro/test.html" target="_blank">
-              <li>
+              </a>
+            </motion.li>
+            <motion.li variants={asideItem}>
+              <a href="https://asdf080.github.io/Laptop-intro/test.html" target="_blank">
                 <img src="img/lapIcon.png" alt="Card Game" /> <p>Search Laptop</p>
-              </li>
-            </a>
-            <li
+              </a>
+            </motion.li>
+            <motion.li
+              variants={asideItem}
               onClick={() => {
                 handleModal("calcul", 1);
                 handleZin("calcul", Math.max(...Object.values(upZin)) + 5);
               }}
             >
               <img src="img/caculIcon.png" alt="Calculator" /> <p>Calculator</p>
-            </li>
+            </motion.li>
           </motion.ul>
         </motion.aside>
       )}
