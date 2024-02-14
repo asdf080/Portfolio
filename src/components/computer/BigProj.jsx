@@ -6,6 +6,7 @@ import { HtmlIcon, CssIcon, JsIcon, JQueryIcon, ReacIcon, TailwindIcon } from ".
 export default function BigProj() {
   return (
     <section className="comWindow">
+      <ProjArt tit="Marvel Clone WEB" date="2024.01.22 ~ 2024.02.08" imgs={["marvel1.png", "marvel2.png", "marvel3.png"]} desc="Marvel 웹사이트 클론코딩입니다. " lis={["모든 화면 크기를 지원하는 반응형 디자인", "useInfiniteQuery를 활용한 무한 스크롤 UI", "React Router를 활용한 페이지 렌더링", "Framer motion을 활용한 동적 요소"]} compo={[ReacIcon, TailwindIcon]} host="https://spontaneous-meringue-3846b5.netlify.app/" git="https://github.com/asdf080/Marble-Web" />
       <ProjArt
         tit="Laptop web"
         date="2024.01.17 ~ 2024.01.31"
