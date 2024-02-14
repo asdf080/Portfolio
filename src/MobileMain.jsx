@@ -27,7 +27,6 @@ export default function MobileMain() {
       {sectionId == 3 && <Setting2 />}
       <nav id="mobileNav">
         <ul>
-          {/* 선택된 아이콘 바꾸는 기능 추가할것 */}
           <List img={sectionId === 0 ? "smile2" : "smile"} txt="프로필" index={0} fnc={setSectionId} />
           <List img={sectionId === 1 ? "folder2" : "folder1"} txt="프로젝트" index={1} fnc={setSectionId} />
           <List img={sectionId === 2 ? "folder2" : "folder1"} txt="사이드" index={2} fnc={setSectionId} />

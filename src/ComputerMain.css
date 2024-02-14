@@ -217,3 +217,56 @@ main section.comWindow::-webkit-scrollbar-thumb {
   background: var(--mainColor);
   border-radius: 10px;
 }
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #calendarWrap {
+    margin: 15px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    text-align: end;
+    font-size: 24px;
+  }
+
+  #calendarWrap #calClose {
+    cursor: pointer;
+    border: none;
+    background: none;
+    height: 24px;
+  }
+
+  div.react-calendar {
+    border: none;
+    font-size: 14px;
+  }
+
+  div.react-calendar * {
+    font-size: 14px;
+  }
+
+  .react-calendar__navigation__label .react-calendar__navigation__label__labelText--from {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  button.react-calendar__tile--active {
+    border-radius: 10px;
+    background: #fd775c;
+  }
+
+  abbr[title] {
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  button.react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    border-radius: 10px;
+  }
+}

@@ -7,6 +7,10 @@ import PopUpWrap from "./components/computer/PopUpWrap";
 import BigToyProj from "./components/computer/BigToyProj";
 import Setting from "./components/computer/Setting";
 import Calculator from "./components/computer/Calculator";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
+import dayjs from "dayjs";
+import { IoClose } from "react-icons/io5";
 
 const IconList = (props) => {
   return (
@@ -22,6 +26,8 @@ export default function ComputerMain() {
   const asideRef = useRef();
   const [showModal, setShowModal] = useState({ about: 1, project: 0, toy: 0, setting: 0, calcul: 0 });
   const [upZin, setUpZin] = useState({ about: 0, project: 0, toy: 0, setting: 0, calcul: 0 });
+  const [date, setDate] = useState(new Date());
+  const [cal, setCal] = useState(false);
 
   const handleModal = (modal, value) => {
     setShowModal((prev) => ({ ...prev, [modal]: value }));
@@ -46,11 +52,6 @@ export default function ComputerMain() {
     };
   }, []);
 
-  const list = {
-    start: { opacity: 0 },
-    end: { opacity: 1 },
-  };
-
   const asideItem = {
     start: { opacity: 0, y: 30 },
     end: {
@@ -59,14 +60,6 @@ export default function ComputerMain() {
       transition: { type: "spring", stiffness: 300, damping: 24 },
     },
   };
-
-  const comNavArr = [
-    { id: "about", label: "about", imgSrc: "img/smile.svg", alt: "about" },
-    { id: "project", label: "project", imgSrc: "img/folder1.svg", alt: "project" },
-    { id: "toy", label: "toy project", imgSrc: "img/folder1.svg", alt: "toy project" },
-    { id: "setting", label: "setting", imgSrc: "img/palette.svg", alt: "setting" },
-  ];
-  const [navThum, setNavThum] = useState(comNavArr);
 
   return (
     <>
@@ -191,15 +184,19 @@ export default function ComputerMain() {
             }}
           />
         )}
+
+        {cal && (
+          <motion.div key="calendar" initial={{ opacity: 0.5, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.1 }} id="calendarWrap">
+            <div id="calClose" onClick={() => setCal(!cal)}>
+              <IoClose />
+            </div>
+            <Calendar onChange={setDate} value={date} formatDay={(_, date) => dayjs(date).format("DD")} calendarType="gregory" />
+          </motion.div>
+        )}
       </main>
       {showAside && (
         <motion.aside ref={asideRef} id="comNavModal" initial={{ height: 200 + "px", opacity: 0 }} animate={{ height: 450 + "px", opacity: 1 }} transition={{ duration: 0.4 }}>
           <motion.ul initial="start" animate="end" transition={{ delayChildren: 0.1, staggerChildren: 0.1 }} onClick={() => setShowAside(!showAside)}>
-            <motion.li variants={asideItem}>
-              <a href="https://asdf080.github.io/TETRIS/" target="_blank">
-                <img src="img/cubeIcon.png" alt="TETRIS" /> <p>TETRIS</p>
-              </a>
-            </motion.li>
             <motion.li variants={asideItem}>
               <a href="https://asdf080.github.io/Memory-Cards/" target="_blank">
                 <img src="img/gemIcon.png" alt="Card Game" /> <p>Card Game</p>
@@ -218,6 +215,14 @@ export default function ComputerMain() {
               }}
             >
               <img src="img/caculIcon.png" alt="Calculator" /> <p>Calculator</p>
+            </motion.li>
+            <motion.li
+              variants={asideItem}
+              onClick={() => {
+                setCal(!cal);
+              }}
+            >
+              <img src="img/cale.png" alt="Calendar" /> <p>Calendar</p>
             </motion.li>
           </motion.ul>
         </motion.aside>

@@ -28,7 +28,7 @@ export default function BigProfile() {
               <FaBirthdayCake />
               &nbsp; birth day
             </p>
-            <p>생년월일</p>
+            <p>98.02.03</p>
           </div>
           <div>
             <p className="pBold">
