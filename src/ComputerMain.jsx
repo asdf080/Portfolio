@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./ComputerMain.css";
-import { motion, Reorder } from "framer-motion";
+import { motion } from "framer-motion";
 import BigProfile from "./components/computer/BigProfile";
 import BigProj from "./components/computer/BigProj";
 import PopUpWrap from "./components/computer/PopUpWrap";
@@ -22,7 +22,6 @@ export default function ComputerMain() {
   const asideRef = useRef();
   const [showModal, setShowModal] = useState({ about: 1, project: 0, toy: 0, setting: 0, calcul: 0 });
   const [upZin, setUpZin] = useState({ about: 0, project: 0, toy: 0, setting: 0, calcul: 0 });
-  const [navThum, setNavThum] = useState([0, 1, 2, 3]);
 
   const handleModal = (modal, value) => {
     setShowModal((prev) => ({ ...prev, [modal]: value }));
@@ -60,6 +59,14 @@ export default function ComputerMain() {
       transition: { type: "spring", stiffness: 300, damping: 24 },
     },
   };
+
+  const comNavArr = [
+    { id: "about", label: "about", imgSrc: "img/smile.svg", alt: "about" },
+    { id: "project", label: "project", imgSrc: "img/folder1.svg", alt: "project" },
+    { id: "toy", label: "toy project", imgSrc: "img/folder1.svg", alt: "toy project" },
+    { id: "setting", label: "setting", imgSrc: "img/palette.svg", alt: "setting" },
+  ];
+  const [navThum, setNavThum] = useState(comNavArr);
 
   return (
     <>
@@ -221,32 +228,30 @@ export default function ComputerMain() {
           <img src="img/window.png" alt="window" />
           <p>시작</p>
         </button>
-        <Reorder.Group as="div" axis="x" values={navThum} onReorder={setNavThum}>
-          {showModal.about === 1 && (
-            <Reorder.Item as="button" key={navThum[0]} value={navThum[0]} className={`modalThum ${가장높은Z === "about" ? "upZ" : ""}`} onClick={() => handleZin("about", Math.max(...Object.values(upZin)) + 5)}>
-              <img src="img/smile.svg" alt="about" />
-              about
-            </Reorder.Item>
-          )}
-          {showModal.project === 1 && (
-            <Reorder.Item as="button" key={navThum[1]} value={navThum[1]} className={`modalThum ${가장높은Z === "project" ? "upZ" : ""}`} onClick={() => handleZin("project", Math.max(...Object.values(upZin)) + 5)}>
-              <img src="img/folder1.svg" alt="project" />
-              project
-            </Reorder.Item>
-          )}
-          {showModal.toy === 1 && (
-            <Reorder.Item as="button" key={navThum[2]} value={navThum[2]} className={`modalThum ${가장높은Z === "toy" ? "upZ" : ""}`} onClick={() => handleZin("toy", Math.max(...Object.values(upZin)) + 5)}>
-              <img src="img/folder1.svg" alt="toy project" />
-              toy project
-            </Reorder.Item>
-          )}
-          {showModal.setting === 1 && (
-            <Reorder.Item as="button" key={navThum[3]} value={navThum[3]} className={`modalThum ${가장높은Z === "setting" ? "upZ" : ""}`} onClick={() => handleZin("setting", Math.max(...Object.values(upZin)) + 5)}>
-              <img src="img/palette.svg" alt="setting" />
-              setting
-            </Reorder.Item>
-          )}
-        </Reorder.Group>
+        {showModal.about === 1 && (
+          <button className={`modalThum ${가장높은Z === "about" ? "upZ" : ""}`} onClick={() => handleZin("about", Math.max(...Object.values(upZin)) + 5)}>
+            <img src="img/smile.svg" alt="about" />
+            about
+          </button>
+        )}
+        {showModal.project === 1 && (
+          <button className={`modalThum ${가장높은Z === "project" ? "upZ" : ""}`} onClick={() => handleZin("project", Math.max(...Object.values(upZin)) + 5)}>
+            <img src="img/folder1.svg" alt="project" />
+            project
+          </button>
+        )}
+        {showModal.toy === 1 && (
+          <button className={`modalThum ${가장높은Z === "toy" ? "upZ" : ""}`} onClick={() => handleZin("toy", Math.max(...Object.values(upZin)) + 5)}>
+            <img src="img/folder1.svg" alt="toy project" />
+            toy project
+          </button>
+        )}
+        {showModal.setting === 1 && (
+          <button className={`modalThum ${가장높은Z === "setting" ? "upZ" : ""}`} onClick={() => handleZin("setting", Math.max(...Object.values(upZin)) + 5)}>
+            <img src="img/palette.svg" alt="setting" />
+            setting
+          </button>
+        )}
       </nav>
     </>
   );
