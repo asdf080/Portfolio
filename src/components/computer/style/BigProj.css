@@ -31,6 +31,7 @@
 .projContent > img {
   width: 350px;
   height: auto;
+  border-radius: 5px;
 }
 
 .projContent .sliWrap .slick-track {

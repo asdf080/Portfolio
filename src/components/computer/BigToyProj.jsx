@@ -8,7 +8,7 @@ const ToyProjArt = (props) => (
     <h3>{props.tit}</h3>
     <div className="projDate">{props.date}</div>
     <div className="projContent toyContent">
-      <img src={`img/${props.img}.png`} alt={props.tit} />
+      <img src={`img/toy/${props.img}.png`} alt={props.tit} />
       <div className="projContentTxt">
         <div className="projDesc">{props.desc}</div>
         <h4>주요 기능</h4>
@@ -43,6 +43,7 @@ const ToyProjArt = (props) => (
 export default function BigToyProj() {
   return (
     <section className="comWindow">
+      <ToyProjArt tit="2048" img="toy2048" date="2024.02.17" desc="키보드로 조작할 수 있는 2048 게임입니다." lis={["-"]} compo={[HtmlIcon, CssIcon, JsIcon]} link1="https://asdf080.github.io/2048/" link2="https://github.com/asdf080/2048" />
       <ToyProjArt tit="Memory Cards Game" img="toyCard" date="2024.01.11 ~ 2024.01.13" desc="카드를 뒤집어 짝을 맞추는 게임입니다." lis={["setInterval을 이용한 타이머 및 시간 제한"]} compo={[HtmlIcon, CssIcon, JsIcon]} link1="https://asdf080.github.io/Memory-Cards/" link2="https://github.com/asdf080/Memory-Cards" />
       <ToyProjArt tit="WORDLE" img="toyWor" date="2024.01.08 ~ 2024.01.09" desc="words API를 이용해 만든 WORDLE 게임입니다." lis={["async await로 비동기 api 호출"]} compo={[HtmlIcon, CssIcon, JsIcon]} link1="https://asdf080.github.io/WORDLE/" link2="https://github.com/asdf080/WORDLE" />
       <ToyProjArt tit="TETRIS" img="toyTetris" date="2024.01.05 ~ 2024.01.06" desc="바닐라 JS로 만든 테트리스 게임입니다." lis={["createElement, childNodes 등 DOM 제어를 이용한 블록 생성", "childNodes로 한줄 완성 체크", "로컬 스토리지에 점수 저장"]} compo={[HtmlIcon, CssIcon, JsIcon]} link1="https://asdf080.github.io/TETRIS/" link2="https://github.com/asdf080/TETRIS" />

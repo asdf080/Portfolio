@@ -27,7 +27,7 @@ export default function ProjArt(props) {
             arrows={false}
           >
             {props.imgs.map((img, index) => (
-              <img key={index} src={`img/${img}`} alt={props.tit} />
+              <img key={index} src={`img/proj/${img}`} alt={props.tit} />
             ))}
           </Slider>
           <div className="sliBtnWrap">
