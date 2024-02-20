@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { PiLinkBold } from "react-icons/pi";
-import { FaGithub, FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { FaGithub, FaArrowRight, FaArrowLeft, FaFigma } from "react-icons/fa";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -64,6 +64,14 @@ export default function ProjArt(props) {
                 깃허브
               </p>
             </a>
+            {props.fig && (
+              <a href={props.fig} target="_blank">
+                <p>
+                  <FaFigma />
+                  와이어프레임
+                </p>
+              </a>
+            )}
           </div>
         </div>
       </div>
