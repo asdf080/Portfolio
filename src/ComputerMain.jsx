@@ -227,7 +227,6 @@ export default function ComputerMain() {
           </motion.ul>
         </motion.aside>
       )}
-
       <nav id="comNav">
         <button className={`startBtn ${showAside ? "clicked" : ""}`} onClick={() => setShowAside(!showAside)}>
           <img src="img/window.png" alt="window" />

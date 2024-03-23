@@ -31,3 +31,32 @@
   font-size: 18px;
   text-transform: capitalize;
 }
+
+#creditWrap {
+  padding: 30px 0;
+}
+#creditWrap h3 {
+  font-size: 26px;
+  margin-bottom: 7px;
+}
+
+#creditWrap ul li {
+  font-size: 18px;
+  margin: 0 0 6px 20px;
+  text-underline-offset: 3px;
+  position: relative;
+}
+#creditWrap ul li::before {
+  position: absolute;
+  top: 40%;
+  left: -10px;
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: var(--brownColor);
+  display: inline-block;
+  border-radius: 50%;
+}
+#creditWrap ul li:hover {
+  text-decoration: underline;
+}
