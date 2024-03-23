@@ -67,9 +67,8 @@ export default function Setting() {
           </li>
           <li>
             <a href="https://www.freepik.com/free-vector/hand-drawn-retro-computer-windows-element_41099709.htm#page=2&query=retro%20ui%20kit&position=33&from_view=keyword&track=ais&uuid=67d3ce04-85d6-4c54-beac-bfd2986da798" target="blank" rel="noopener noreferrer">
-              메인 아이콘: pikisuperstar&nbsp;
+              메인 아이콘: pikisuperstar - Freepik
             </a>
-            - Freepik
           </li>
           <li>
             <a href="https://www.flaticon.com/kr/free-icon/jewels_306776?term=%EB%B3%B4%EC%84%9D&page=1&position=28&origin=search&related_id=306776" title="보석 아이콘" target="blank" rel="noopener noreferrer">
