@@ -23,4 +23,5 @@ https://08intro.netlify.app/
 
 ![preview](./public/img/preview/preview2.png)
 
-
+[Icon image by pikisuperstar on Freepik
+](https://www.freepik.com/free-vector/hand-drawn-retro-computer-windows-element_41099709.htm#page=2&query=retro%20ui%20kit&position=33&from_view=keyword&track=ais&uuid=67d3ce04-85d6-4c54-beac-bfd2986da798)
