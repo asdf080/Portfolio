@@ -133,6 +133,10 @@ main #comIconWrap li img {
   min-height: 45.92px;
   max-height: 90px;
 }
+main #comIconWrap li p {
+  color: var(--brownColor);
+  font-weight: bold;
+}
 
 main #popUpWrap {
   position: absolute;
