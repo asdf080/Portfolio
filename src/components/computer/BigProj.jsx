@@ -10,7 +10,7 @@ export default function BigProj() {
         tit="동성로 관광 안내 사이트"
         date="2024.03.04 ~ 2024.03.28"
         imgs={["dongseong1.png", "dongseong2.png", "dongseong3.png"]}
-        desc="대구광역시의 동성로를 안내하는 사이트입니다."
+        desc="대구광역시의 동성로를 안내하는 사이트입니다. 팀 프로젝트로 제작했으며 UI UX 디자인과 웹 퍼블리싱, 프론트엔드를 담당했습니다."
         lis={["네이버, 카카오 연동 소셜 로그인", "회원 전용 장소 찜목록 관리", "관리자 전용 회원 검색 및 삭제", "오픈 API를 연동한 정보 제공"]}
         compo={[HtmlIcon, CssIcon, JsIcon, PHPIcon]}
         host="http://dongseong.dothome.co.kr/"
