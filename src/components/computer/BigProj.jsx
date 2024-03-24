@@ -1,11 +1,22 @@
 import React from "react";
 import ProjArt from "./ProjArt";
 import "./style/BigProj.css";
-import { HtmlIcon, CssIcon, JsIcon, JQueryIcon, ReacIcon, TailwindIcon } from "../Icon";
+import { HtmlIcon, CssIcon, JsIcon, JQueryIcon, ReacIcon, TailwindIcon, PHPIcon } from "../Icon";
 
 export default function BigProj() {
   return (
     <section className="comWindow">
+      <ProjArt
+        tit="동성로 관광 안내 사이트"
+        date="2024.03.04 ~ 2024.03.28"
+        imgs={["dongseong1.png", "dongseong2.png", "dongseong3.png"]}
+        desc="대구광역시의 동성로를 안내하는 사이트입니다."
+        lis={["네이버, 카카오 연동 소셜 로그인", "회원 전용 장소 찜목록 관리", "관리자 전용 회원 검색 및 삭제", "오픈 API를 연동한 정보 제공"]}
+        compo={[HtmlIcon, CssIcon, JsIcon, PHPIcon]}
+        host="http://dongseong.dothome.co.kr/"
+        git="https://github.com/schentea/0304-NewProject"
+        fig="https://www.figma.com/file/XXD4vpzMCScxfClxyP2Kq8/%EB%8F%99%EC%84%B1%EB%A1%9C?type=design&node-id=0-1&mode=design&t=gwBfhC3kYbAYkgqa-0"
+      />
       <ProjArt tit="Marvel Clone WEB" date="2024.01.22 ~ 2024.02.08" imgs={["marvel1.png", "marvel2.png", "marvel3.png"]} desc="Marvel 웹사이트 클론코딩입니다. " lis={["모든 화면 크기를 지원하는 반응형 디자인", "useInfiniteQuery를 활용한 무한 스크롤 UI", "React Router를 활용한 페이지 렌더링", "Framer motion을 활용한 동적 요소"]} compo={[ReacIcon, TailwindIcon]} host="https://spontaneous-meringue-3846b5.netlify.app/" git="https://github.com/asdf080/Marble-Web" />
       <ProjArt
         tit="Laptop web"

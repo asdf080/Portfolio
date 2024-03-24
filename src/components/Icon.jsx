@@ -29,3 +29,7 @@ export function ReacIcon() {
 export function TailwindIcon() {
   return <span style={{ ...css, background: "#D3E5EF" }}>Tailwind CSS</span>;
 }
+
+export function PHPIcon() {
+  return <span style={{ ...css, background: "#bdbfdc" }}>php</span>;
+}
