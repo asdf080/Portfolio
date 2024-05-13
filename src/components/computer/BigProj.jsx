@@ -9,11 +9,11 @@ export default function BigProj() {
       <ProjArt
         tit="대구 원데이 클래스 사이트"
         date="2024.04.01 ~ 2024.04.26"
-        imgs={["dongseong1.png", "dongseong2.png", "dongseong3.png"]}
+        imgs={["oneday1.png", "oneday2.png"]}
         desc="대구의 원데이 클래스를 홍보하거나, 수강 신청할 수 있는 사이트입니다. 팀 프로젝트로 제작했으며 기획, UI UX 디자인, 웹 퍼블리싱, 프론트 엔드를 담당했습니다."
-        lis={["회원 가입, 로그인 기능", "회원 전용 수강 신청 기능", "알림톡 전송"]}
+        lis={["회원 가입, 로그인 기능", "회원 전용 수강 신청 기능", "수강 신청 완료 시 알림톡 전송"]}
         compo={[ReacIcon, TailwindIcon]}
-        host="http://dongseong.dothome.co.kr/"
+        host="https://one-day-git-master-jaesiks-projects.vercel.app/"
         git="https://github.com/sikkkkkw/OneDay"
         fig="https://www.figma.com/file/PnKLyCHOkxAUAYQZFZMgN2/one-day?type=design&mode=design&t=gJuwZCa96y3YZf6Z-0"
       />
