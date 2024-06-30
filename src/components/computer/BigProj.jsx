@@ -7,6 +7,17 @@ export default function BigProj() {
   return (
     <section className="comWindow">
       <ProjArt
+        tit="대구 수목원 스탬프 투어"
+        date="2024.05.01 ~ 2024.05.23"
+        imgs={["sumok2.jpg", "sumok1.jpg"]}
+        desc="대구 수목원 스탬프투어 모바일 전용 웹입니다. 하이브리드 앱에 적용하기 위한 웹사이트입니다. 팀 프로젝트로 제작했으며 기획, UI UX 디자인, 프론트 엔드를 담당했습니다."
+        lis={["카카오, 구글 간편 회원가입, 로그인 기능", "회원 전용 GPS 기반 QR 코드 스캔 및 스탬프 저장 기능", "유저의 편의를 위한 다크 모드, 색맹 모드, 외국어 모드", "오픈 API를 활용한 지도 및 날씨 지원"]}
+        compo={[ReacIcon, TailwindIcon]}
+        host="https://daegusumokwon.netlify.app/"
+        git="https://github.com/Kimeunryeong/su-mok-won"
+        fig="https://www.figma.com/design/9XKViZ6WYcwNfBegUiyphq/%EC%88%98%EB%AA%A9%EC%9B%90?t=CU8SSed4lS7doLqM-1"
+      />
+      <ProjArt
         tit="대구 원데이 클래스 사이트"
         date="2024.04.01 ~ 2024.04.26"
         imgs={["oneday1.png", "oneday2.png"]}
@@ -21,7 +32,7 @@ export default function BigProj() {
         tit="동성로 관광 안내 사이트"
         date="2024.03.04 ~ 2024.03.28"
         imgs={["dongseong1.png", "dongseong2.png", "dongseong3.png"]}
-        desc="대구광역시의 동성로를 안내하는 사이트입니다. 팀 프로젝트로 제작했으며 UI UX 디자인과 웹 퍼블리싱, 프론트 엔드를 담당했습니다."
+        desc="대구광역시의 동성로를 안내하는 사이트입니다. 팀 프로젝트로 제작했으며 기획, UI UX 디자인과 웹 퍼블리싱, 프론트 엔드를 담당했습니다."
         lis={["네이버, 카카오 연동 소셜 로그인", "회원 전용 장소 찜목록 관리", "관리자 전용 회원 검색 및 삭제", "오픈 API를 연동한 정보 제공"]}
         compo={[HtmlIcon, CssIcon, JsIcon, PHPIcon]}
         host="http://dongseong.dothome.co.kr/"
